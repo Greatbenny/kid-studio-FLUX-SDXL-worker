@@ -160,17 +160,6 @@ def _load_model(model_key: str) -> Any:
     return pipe
 
 
-def _release_model() -> None:
-    global _loaded_key, _loaded_pipe, _loaded_img2img
-    _loaded_img2img = None
-    _loaded_pipe = None
-    _loaded_key = None
-    gc.collect()
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
-        torch.cuda.ipc_collect()
-
-
 def _int_value(value: Any, name: str, minimum: int, maximum: int, default: int) -> int:
     if value is None:
         return default
