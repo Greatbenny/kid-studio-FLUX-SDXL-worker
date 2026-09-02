@@ -1,0 +1,11 @@
+{
+  "input": {
+    "operation": "generate",
+    "model": "flux-schnell",
+    "prompt": "A joyful young African girl teaching three friendly rabbits the alphabet in a bright forest clearing, polished family-friendly 3D animation, clean composition",
+    "quality": "cheap",
+    "width": 1024,
+    "height": 1024,
+    "seed": 42
+  }
+}
