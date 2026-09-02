@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     HF_HUB_CACHE=/runpod-volume/huggingface/hub \
     TRANSFORMERS_CACHE=/runpod-volume/huggingface/hub \
     TORCH_HOME=/runpod-volume/torch \
-    TMPDIR=/runpod-volume/tmp
+    TMPDIR=/tmp
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ca-certificates \
